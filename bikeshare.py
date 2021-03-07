@@ -195,6 +195,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df,city)
 
+        # Ask user to display the 5 rows of raw data until user writes NO.
         row = 0
         while True:
             viewData = input("\nWould you like to see the raw data? Type 'Yes' or 'No'.\n")
