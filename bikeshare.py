@@ -96,7 +96,7 @@ def time_stats(df):
         print("The most common day of travel is: ", mc_day)
     else:
         current_day = df["day_of_week"].unique()[0].lower()
-        print("There is the no most common day since you have selected one day which is: ", current_day)
+        print("There is the no most common day since you have selected one day which is {}.".format(current_day))
 
     # display the most common start hour
     mc_hour = df.groupby(["hour"]).size().idxmax()
@@ -114,11 +114,11 @@ def station_stats(df):
 
     # display most commonly used start station
     mc_s_station = df.groupby(["Start Station"]).size().idxmax()
-    print("The most common start station is: ", mc_s_station)
+    print("The most common start station is {}.".format(mc_s_station))
 
     # display most commonly used end station
     mc_e_station = df.groupby(["End Station"]).size().idxmax()
-    print("The most common end station is: ", mc_e_station)
+    print("The most common end station is {}.".format(mc_e_station))
 
     # display most frequent combination of start station and end station trip
     mc_combined_station = df.groupby(["Start Station", "End Station"]).size().idxmax()
@@ -136,7 +136,7 @@ def trip_duration_stats(df):
 
     # display total travel time
     tot_time = df["Trip Duration"].sum()
-    print("Total travel time:", tot_time, "in seconds.")
+    print("Total travel time is {} in seconds".format(tot_time))
 
     # Prints total time in format hh:mm:ss
     # print("Total travel time in the form hh:mm:ss is:", str( int( (tot_time / 3600) ) ) + ":" +
