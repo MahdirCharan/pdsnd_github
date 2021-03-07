@@ -11,4 +11,4 @@ In this project, I made use of Python to explore data related to bike share syst
 The related CSV files for the cities are not tracked in this repo but they are available upon request.
 
 ### Credits
-The content of the README file was written based on the project overview in the Udacity course: Programming for Data Science with Python Nanodegree Program.
+The content of the README file was written based on the project overview in the Udacity course: [Programming for Data Science with Python Nanodegree Program](https://www.udacity.com/course/programming-for-data-science-nanodegree--nd104).
