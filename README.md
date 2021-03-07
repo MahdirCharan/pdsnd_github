@@ -12,3 +12,8 @@ The related CSV files for the cities are not tracked in this repo but they are a
 
 ### Credits
 The content of the README file was written based on the project overview in the Udacity course: [Programming for Data Science with Python Nanodegree Program](https://www.udacity.com/course/programming-for-data-science-nanodegree--nd104).
+
+### Software
+* Python 3, NumPy, and pandas installed using Anaconda
+* A text editor, like [Atom](https://atom.io/)
+* A terminal application (Terminal on Mac and Linux or Cygwin on Windows)
