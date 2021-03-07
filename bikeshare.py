@@ -152,7 +152,9 @@ def trip_duration_stats(df):
 
 
 def user_stats(df, city):
-    """Displays statistics on bikeshare users."""
+    """Displays statistics on bikeshare users. Notice that the data for Washington doesn't have
+    the column for Gender and Birth Year. Therefore the function executes a conditional statement to check
+    which data is under consideration."""
 
     print('\nCalculating User Stats...\n')
     start_time = time.time()
