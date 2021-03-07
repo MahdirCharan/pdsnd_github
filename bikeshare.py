@@ -139,9 +139,9 @@ def trip_duration_stats(df):
     print("Total travel time:", tot_time, "in seconds.")
 
     # Prints total time in format hh:mm:ss
-    print("Total travel time in the form hh:mm:ss is:", str( int( (tot_time / 3600) ) ) + ":" +
-          str( int(  ( (tot_time % 3600) / 60 )  ) ) + ":" +
-          str( int( ( (tot_time % 3600) % 60 ) ) ) )
+    # print("Total travel time in the form hh:mm:ss is:", str( int( (tot_time / 3600) ) ) + ":" +
+          #str( int(  ( (tot_time % 3600) / 60 )  ) ) + ":" +
+          #str( int( ( (tot_time % 3600) % 60 ) ) ) )
 
     # display mean travel time
     mean_time = df["Trip Duration"].mean()
